@@ -36,11 +36,13 @@
                                 <div id="navigation">
                                     <ul>
                                         <li class="active"><a href="index.html">Inicio</a></li>
-                                        <li class="has-sub"><a href="#">Hoteles</a>
+                                        <li class="has-sub"><a href="#"> {{btnHoteles}}  </a>
                                             <ul>
-                                                <li><a href="tour-list.html">Tour List</a></li>
-                                                <li><a href="tour-single.html">Tour Single</a></li>
-                                                <li><a href="tour-single-list.html">Tour List Single </a></li>
+                                                
+                                                <li *ngFor="let opcionMenu of btnCategorias">
+                                                    <a href="tour-list.html"> {{opcionMenu}} </a>
+                                                </li>
+
                                             </ul>
                                         </li>
                                         <li><a href="about.html">Quienes Somos</a></li>
